@@ -8,7 +8,7 @@ I’ve not got ubuntu to hand, but I am 90% sure this should work:
 
     apt-get install nodejs nodejs-legacy gstreamer gst-plugins-base gst-libav gst-plugins-good gst-plugins-bad gst-plugins-ugly
 
-Then once they are installed, go to the repo’s folder in github. First time run this:
+Then once these have installed, go to the repo’s folder. First time run this:
 
     npm install
 

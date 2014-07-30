@@ -1,0 +1,44 @@
+@import "reset.less";
+
+html, body {
+    margin: 0; padding: 0;
+    background: #000000;
+    color: white;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: 114px;
+    line-height: 105px;
+}
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.screens {
+    width: 100%;
+    height: 100%;
+}
+
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.selection, .hold, .iLikedIt, .doItAgain {
+    display: inline-block;
+    text-decoration: underline;
+    font-style: italic;
+    // background-color: grey;
+    // margin-left: 10px;
+    // margin-right: 10px;
+}

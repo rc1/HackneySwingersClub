@@ -1,0 +1,72 @@
+doctype html
+html(lang="en")
+    head
+        link( rel='stylesheet', type='text/css', href='css/style.css' )
+        script( src='/watch.js' )
+        meta( name="viewport", content="width=device-width, user-scalable=no" )
+        meta( charset="utf-8" )
+        meta( name="apple-mobile-web-app-capable", content="yes" )
+        meta( name="apple-mobile-web-app-status-bar-style", content="black" )
+
+    body
+        .screens
+            .screen
+                p Touch me anywhere to get started.
+            .screen
+                p Oooo, that’s it.
+                p Touch me again.
+            .screen
+                p That’s how I like it.
+            .screen
+                p Now your turn.
+            .screen
+                p Select a swing:
+                br
+                p &nbsp;&nbsp;
+                  .selection( data-swing=1 ) 1 
+                  | &nbsp;&nbsp;|&nbsp;&nbsp; 
+                  .selection( data-swing=2 ) 2 
+                  | &nbsp;&nbsp;|&nbsp;&nbsp;
+                  .selection( data-swing=3 ) 3
+            .screen
+                p Ok, if that’s how you like it.
+            .screen
+                p Now my turn.
+            .screen
+                p I want to hear you make a sound in my microphone.
+            .screen
+                p Are you ready?
+                br  
+                p
+                  .selection I’m ready
+            .screen
+                p But wait. 
+            .screen
+                p I want you to make it last this time. 
+            .screen
+                p A few seconds, at least.
+                br
+                p
+                    .selection I’ll try
+            .screen
+                p Ok... you promised.
+            .screen.touchAndHold
+                p Now touch and hold me while you make your sound.
+                br  
+                p
+                    .hold Touch and hold
+            .screen
+                p Did you like that?
+                br
+                p
+                    .iLikedIt I liked it
+                p or
+                p
+                    .doItAgain I want to do it again
+
+        //- Libraries
+        script( src='js/libs/jquery-2.1.0.min.js' )
+        script( src='js/libs/W.min.js' )
+
+        //- Main
+        script( src='js/main.js' )

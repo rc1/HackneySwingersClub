@@ -1,6 +1,6 @@
 # Hackney Swingers Club @ Hackney Wicked Festival
 
-If you want to run it, you will need node.js and GStreamer installed. To instal on a mac, presuming you have homebrew installed – do this in the terminal:
+If you want to run it, you will need node.js and GStreamer installed. To install on a mac, presuming you have homebrew installed – do this in the terminal:
 
     brew install nodejs gstreamer gst-plugins-base gst-libav gst-plugins-good gst-plugins-bad gst-plugins-ugly
 

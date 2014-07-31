@@ -30,11 +30,15 @@ $( function () {
                     var $this = $( this );
                     $this.text( 'Recording' );
                     startRecording( swing );
+                    var timeoutId = 0;
                     var handler = function () {
                         stopRecording();
-                        $this.text( 'Touch and hold' );
-                        displayNextScreen( screens, el );
-                        $( document ).off( 'mouseup touchend', handler );
+                        timeoutId = setTimeout( function () {
+                            clearTimeout( timeoutId );
+                            $this.text( 'Touch and hold' );
+                            displayNextScreen( screens, el );
+                            $( document ).off( 'mouseup touchend', handler );
+                        }, 1000 );
                     };
                     $( document ).on( 'mouseup touchend', handler );
                 });
